@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.read{
+    text-decoration:line-through;
+    color:gray;
+  }
+
+body{
+  background: rgba(181,238,233,1);
+background: -moz-linear-gradient(left, rgba(181,238,233,1) 0%, rgba(42,229,201,1) 50%, rgba(190,239,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(181,238,233,1)), color-stop(50%, rgba(42,229,201,1)), color-stop(100%, rgba(190,239,234,1)));
+background: -webkit-linear-gradient(left, rgba(181,238,233,1) 0%, rgba(42,229,201,1) 50%, rgba(190,239,234,1) 100%);
+background: -o-linear-gradient(left, rgba(181,238,233,1) 0%, rgba(42,229,201,1) 50%, rgba(190,239,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(181,238,233,1) 0%, rgba(42,229,201,1) 50%, rgba(190,239,234,1) 100%);
+background: linear-gradient(to right, rgba(181,238,233,1) 0%, rgba(42,229,201,1) 50%, rgba(190,239,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5eee9', endColorstr='#beefea', GradientType=1 );
+}
+.Todo-app{
+  width: 357px;
+  margin: 50px auto;
+}
+.Todo-app .headline h2{
+  margin: 0;
+  font-size: 40px;
+  background: #f1c40f;
+  color: white;
+  display: inline-block;
+  padding: 20px 106px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid #fff;
+}
+.submit{
+  width: 100%;
+}
+.submit input{
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #e67e22;
+  color: #444;
+  border-radius: 5px;
+}
+.submit input:focus{
+  border-color:blue;
+}
+.submit button{
+  padding: 9px 15px;
+  margin-left: 33px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+ 
+  background: #3498db;
+}
+.submit button:hover{
+  color:#fff;
+  border-color:#3498db;
+ 
+}
+.list{
+  margin-top: 10px;
+}
+ul{
+list-style: none;
+}
+ul li{
+  cursor: pointer;
+  padding: 6px 0;
+  font-size: 20px;
+  background: #f1c40f;
+  margin-top: 2px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+
+
+ul li span{
+  opacity: 0;
+  visibility: hidden;
+  margin-left: -34px;
+  transition: .3s;
+}
+ul li span i{
+  font-size: 20px;
+  background: #f39c12;
+  padding: 10px;
+  margin-right: 4px;
+  border-radius: 0 5px 5px 0;
+
+ 
+  
+}
+ul li:hover span{
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0;
+  
+}
